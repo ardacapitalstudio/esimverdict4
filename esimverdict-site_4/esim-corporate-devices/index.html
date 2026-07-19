@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel eSIMs and Corporate Device Management: What Employees Need to Know | eSIM Verdict</title>
+<meta name="description" content="Can you install a travel eSIM on a work phone? How Intune, Jamf and Android Enterprise control eSIM changes, what to ask IT, and how to stay inside policy.">
+<link rel="canonical" href="https://esimverdict.com/esim-corporate-devices/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="eSIM Verdict">
+<meta property="og:title" content="Travel eSIMs and Corporate Device Management: What Employees Need to Know | eSIM Verdict">
+<meta property="og:description" content="Can you install a travel eSIM on a work phone? How Intune, Jamf and Android Enterprise control eSIM changes, what to ask IT, and how to stay inside policy.">
+<meta property="og:url" content="https://esimverdict.com/esim-corporate-devices/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preload" href="/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/main.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Travel eSIMs and Corporate Device Management: What Employees Need to Know", "description": "Can you install a travel eSIM on a work phone? How Intune, Jamf and Android Enterprise control eSIM changes, what to ask IT, and how to stay inside policy.", "url": "https://esimverdict.com/esim-corporate-devices/", "datePublished": "2026-07-19", "dateModified": "2026-07-19", "author": {"@type": "Organization", "name": "eSIM Verdict"}, "publisher": {"@type": "Organization", "name": "eSIM Verdict", "url": "https://esimverdict.com/"}}</script>
+</head>
+<body class="bg-neo-bg font-grotesk text-black antialiased">
+<!-- ===================== TOP MARQUEE ===================== -->
+<div class="bg-black border-b-4 border-black overflow-hidden" aria-hidden="true">
+  <div class="flex w-max animate-marquee whitespace-nowrap py-2">
+    <div class="flex items-center gap-6 pr-6 text-white font-bold uppercase text-sm tracking-widest">
+      <span>Tested &amp; ranked</span><span class="text-neo-secondary">&#9733;</span>
+      <span>Updated July 2026</span><span class="text-neo-secondary">&#9733;</span>
+      <span>5 providers, real trips</span><span class="text-neo-secondary">&#9733;</span>
+      <span>No roaming fees</span><span class="text-neo-secondary">&#9733;</span>
+      <span>Independent testing</span><span class="text-neo-secondary">&#9733;</span>
+    </div>
+    <div class="flex items-center gap-6 pr-6 text-white font-bold uppercase text-sm tracking-widest">
+      <span>Tested &amp; ranked</span><span class="text-neo-secondary">&#9733;</span>
+      <span>Updated July 2026</span><span class="text-neo-secondary">&#9733;</span>
+      <span>5 providers, real trips</span><span class="text-neo-secondary">&#9733;</span>
+      <span>No roaming fees</span><span class="text-neo-secondary">&#9733;</span>
+      <span>Independent testing</span><span class="text-neo-secondary">&#9733;</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<header class="sticky top-0 z-50 bg-neo-bg border-b-4 border-black">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 py-3" aria-label="Main">
+    <a href="#" aria-label="eSIM Verdict home" class="bg-neo-bg border-4 border-black px-2 py-1 -rotate-1 shadow-[4px_4px_0px_0px_#000] hover:rotate-1 transition-transform duration-100 inline-block">
+      <svg class="h-10 sm:h-12 w-auto" viewBox="0 0 960 700" role="img" aria-label="eSIM Verdict"><text x="40" y="330" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="330" fill="#000" textLength="680" lengthAdjust="spacingAndGlyphs">ESIM</text><path d="M756 70 H866 L928 132 V330 H756 Z" fill="none" stroke="#000" stroke-width="18"/><path d="M792 232 L844 290 L936 158" fill="none" stroke="#FF6B6B" stroke-width="38" stroke-linecap="square"/><path d="M40 380 H920 V478 H882 V562 H920 V640 H40 Z" fill="#000"/><text x="78" y="596" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="185" fill="#FF6B6B" textLength="768" lengthAdjust="spacingAndGlyphs">VERDICT</text></svg>
+    </a>
+    <div class="hidden md:flex items-center gap-1 font-bold uppercase text-sm tracking-wide">
+      <a href="/#rankings" class="px-3 py-2 border-2 border-transparent hover:border-black hover:bg-neo-accent hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-100">Rankings</a>
+      <a href="/#compare" class="px-3 py-2 border-2 border-transparent hover:border-black hover:bg-neo-accent hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-100">Compare</a>
+      <a href="/#howto" class="px-3 py-2 border-2 border-transparent hover:border-black hover:bg-neo-accent hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-100">How-to</a>
+      <a href="/#guides" class="px-3 py-2 border-2 border-transparent hover:border-black hover:bg-neo-accent hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-100">Guides</a>
+      <a href="/#faq" class="px-3 py-2 border-2 border-transparent hover:border-black hover:bg-neo-accent hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-100">FAQ</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="/#rankings" class="hidden sm:inline-flex items-center gap-2 bg-neo-accent border-4 border-black px-4 h-12 font-bold text-sm uppercase tracking-wide shadow-[4px_4px_0px_0px_#000] hover:bg-[#ff5252] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-100">
+        See #1 pick
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden bg-white border-4 border-black p-2 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-100">
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden border-t-4 border-black bg-neo-bg px-4 py-4">
+    <div class="flex flex-col gap-3 font-bold uppercase tracking-wide">
+      <a href="/#rankings" class="mobile-link bg-white border-4 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">Rankings</a>
+      <a href="/#compare" class="mobile-link bg-white border-4 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">Compare</a>
+      <a href="/#howto" class="mobile-link bg-white border-4 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">How-to</a>
+      <a href="/#guides" class="mobile-link bg-white border-4 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">Guides</a>
+      <a href="/#faq" class="mobile-link bg-white border-4 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">FAQ</a>
+      <a href="/#rankings" class="mobile-link bg-neo-accent border-4 border-black px-4 py-3 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">See #1 pick &#8594;</a>
+    </div>
+  </div>
+</header>
+
+<div id="view-home">
+<main id="main">
+<article>
+
+  <div class="bg-white border-b-8 border-black">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-8">
+      <a href="/#guides" class="inline-flex items-center gap-2 font-black uppercase text-xs tracking-widest border-2 border-black bg-neo-secondary px-3 py-2 shadow-[3px_3px_0px_0px_#000] hover:bg-neo-accent active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-100">&#8592; All guides</a>
+      <p class="mt-8"><span class="bg-black text-white border-2 border-black px-2 py-0.5 text-xs font-black uppercase tracking-widest">Privacy</span></p>
+      <h1 class="mt-4 font-black uppercase tracking-tighter leading-[0.95] text-3xl sm:text-5xl lg:text-6xl">Travel eSIMs and Corporate Device Management: What Employees Need to Know</h1>
+      <p class="mt-6 text-lg sm:text-2xl font-medium leading-snug max-w-3xl">Can you install a travel eSIM on a work phone?  How Intune, Jamf and Android Enterprise control eSIM changes, what to ask IT, and how to stay inside policy.</p>
+      <div class="mt-8 flex flex-wrap gap-x-8 gap-y-2 font-bold uppercase text-xs tracking-widest border-t-4 border-black pt-4">
+        <span>By the eSIM Verdict research desk</span>
+        <span>Last checked 19 July 2026</span>
+        <span>13 min read</span>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-10">
+    <figure class="photo-figure border-4 border-black shadow-[8px_8px_0px_0px_#000] bg-white">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/SIA%20787-10%20regional%20business%20%2827191924378%29.jpg?width=1600" alt="" class="w-full h-auto block" onerror="this.closest('figure').style.display='none'">
+    </figure>
+  </div>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10 prose-neo">
+<p><em>Some links on eSIMVerdict are affiliate links.  If you buy through them we may earn a commission at no extra cost to you.  Commercial relationships never affect rankings or conclusions; our assessments are based on independent research.</em></p>
+<p>You are flying out on Monday, the roaming quote from your carrier is absurd, and a travel eSIM costs less than an airport sandwich.  There is just one complication: the phone in your pocket belongs to your employer.  Whether you can install that eSIM at all depends on how the device is enrolled, and whether you should depends on policies you may never have read.</p>
+<p>The short version: on a supervised, company-owned iPhone or a fully managed Android device, IT can technically prevent you from adding or removing eSIMs, and many security-conscious organisations do exactly that.  On a personal phone enrolled through a BYOD programme, your employer manages a work container, not your SIM settings, so travel eSIMs remain your business.  In between sits a large grey zone where installation works but policy forbids it, or where nobody has thought about it at all.</p>
+<p>This guide explains what the major device management platforms can actually enforce, why IT departments care, and the sensible way to get connected abroad without turning a cheap data plan into a disciplinary conversation.</p>
+<h2>At a glance</h2>
+<ul>
+<li><strong>Supervised iOS (company-owned):</strong> Apple provides a supervised-only restriction that stops users adding or removing eSIM plans.  Intune, Jamf Pro and Workspace ONE UEM all expose it.</li>
+<li><strong>Fully managed Android Enterprise:</strong> admins can block mobile network configuration, control user-initiated eSIM additions and even wipe corporate eSIMs remotely.</li>
+<li><strong>BYOD (iOS User Enrolment or Android work profile):</strong> eSIM controls do not reach the personal side of your device.  Policy, not technology, is the constraint.</li>
+<li><strong>The right move:</strong> ask IT before you travel.  Many companies have corporate roaming deals; many others will happily reimburse a personal travel eSIM instead.</li>
+<li><strong>Never</strong> unenrol, jailbreak or work around controls on a corporate device.  The savings are trivial; the consequences are not.</li>
+</ul>
+<h2>Can IT block a travel eSIM on your device?</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Device situation</th>
+<th>Can IT block eSIM installation?</th>
+<th>Typical reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Company-owned iPhone, supervised (Automated Device Enrolment)</td>
+<td>Yes - supervised restriction blocks adding/removing eSIM plans</td>
+<td>Blocked in regulated industries; often left open elsewhere</td>
+</tr>
+<tr>
+<td>Company-owned iPhone, enrolled but not supervised</td>
+<td>Not via the eSIM restriction (supervised-only)</td>
+<td>Policy may still forbid it</td>
+</tr>
+<tr>
+<td>Personal iPhone, BYOD User Enrolment</td>
+<td>No - management stops at the work container</td>
+<td>Your eSIMs are your own; work data stays separate</td>
+</tr>
+<tr>
+<td>Android Enterprise, fully managed (company-owned)</td>
+<td>Yes - network configuration and eSIM addition can be restricted</td>
+<td>Varies widely by employer</td>
+</tr>
+<tr>
+<td>Android Enterprise, work profile on personal device</td>
+<td>No - personal profile settings remain yours</td>
+<td>Travel eSIM sits alongside the work profile</td>
+</tr>
+<tr>
+<td>Unmanaged personal phone</td>
+<td>No</td>
+<td>Entirely your decision</td>
+</tr>
+</tbody>
+</table></div>
+<h2>How MDM actually controls eSIM installation</h2>
+<h3>iOS and iPadOS: supervised restrictions</h3>
+<p>Apple's management framework includes a family of cellular restrictions that only apply to supervised devices, which in practice means company-owned hardware enrolled through Automated Device Enrolment.  Apple's platform deployment documentation lists a "Modify eSIM settings" restriction (available since iOS 12.1) that prevents users adding or removing eSIM plans, and a broader "Modify cellular plan settings" restriction dating back to iOS 11.  Two newer controls matter for travellers as well: from iOS 17.2 admins can force preservation of the eSIM when a device is erased after repeated failed passcodes, and from iOS 18 they can block outgoing eSIM transfers to another device.</p>
+<p>Every mainstream MDM surfaces these keys because they all speak Apple's same management protocol.  In Microsoft Intune the toggle appears in iOS device restrictions as "Block modification of eSIM settings", documented for iOS 12.1 and later under automated device enrolment.  Jamf Pro and Omnissa Workspace ONE UEM expose the equivalent checkbox in their iOS restriction profiles.  If your work iPhone greys out the "Add eSIM" option in Settings, this restriction is almost certainly why.</p>
+<p>Note the flip side: if the restriction is enabled, you cannot remove eSIMs either.  That is deliberate.  It stops a thief with your passcode from stripping the corporate line, and it stops well-meaning employees from deleting the company profile to free a slot.</p>
+<h3>Android Enterprise: fully managed versus work profile</h3>
+<p>On Android the dividing line is the management mode.  On a fully managed, company-owned device, Google's Android Management API gives administrators policy controls including <code>mobileNetworksConfigDisabled</code> (blocking mobile network configuration), <code>userInitiatedAddEsimSettings</code> (governing whether users can add eSIMs themselves) and a <code>WIPE_ESIMS</code> flag that removes eSIMs when the device is wiped.  Taken together, these controls mean a company-owned Android device can be locked down as tightly as a supervised iPhone.</p>
+<p>On a personal device with a work profile, the employer manages the profile, not the phone.  Network settings, SIM management and everything outside the badged apps remain under your control.  That separation is the entire point of the work profile model, and it is why BYOD users can install travel eSIMs freely.</p>
+<h3>Windows laptops too</h3>
+<p>eSIM management is not just a phone story.  Intune can deploy cellular activation codes in bulk to eSIM-capable Windows laptops, distributing codes imported from a mobile operator to targeted device groups.  If you carry a corporate LTE laptop, its connectivity may be centrally provisioned in exactly this way, and adding your own plan to it is worth a question to IT before you try.</p>
+<div style="margin:2.6em 0"><figure class="photo-figure border-4 border-black shadow-[8px_8px_0px_0px_#000] bg-white">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee-desk-laptop-notebook%20%2824244320481%29.jpg?width=1200" alt="" class="w-full h-auto block" loading="lazy" onerror="this.closest('figure').style.display='none'">
+    </figure></div>
+<h2>Why IT departments care</h2>
+<p>It is tempting to read eSIM restrictions as bureaucratic reflex.  There are usually four concrete reasons behind them.</p>
+<p><strong>Traffic leaves the managed path.</strong>  Corporate fleets often route traffic through an always-on VPN, a secure web gateway or both.  A new eSIM does not bypass a properly configured device-wide VPN, but it changes the underlying network, and on fleets where inspection or compliance is tied to known carrier connections that matters.  Where your traffic physically surfaces also changes: many travel eSIMs route through a breakout country that is not the country you are standing in, as our guide to <a href="/esim-traffic-routing/">eSIM traffic routing</a> explains.  A device that appears to come online in a third jurisdiction can trip conditional access rules, fraud detection and data residency obligations.</p>
+<p><strong>Compliance and legal exposure.</strong>  Regulated industries need to demonstrate control over how corporate data moves.  An unknown carrier inserted by an employee is an unmanaged variable, and in some sectors an auditable one.</p>
+<p><strong>Expense control.</strong>  Companies negotiate roaming bundles with their carriers.  Finance wants travel connectivity flowing through the deal it negotiated, not through dozens of individually expensed apps, however cheap each one is.</p>
+<p><strong>Support and incident response.</strong>  When a work phone misbehaves abroad, the help desk troubleshoots against a known configuration.  A personal eSIM with its own APN settings adds a layer they did not build and cannot see.</p>
+<h2>The polite path: what to ask IT before you travel</h2>
+<p>A short email a week before departure solves almost every problem in this article.  Ask five things:</p>
+<ol>
+<li><strong>Is my device supervised or fully managed, and is eSIM modification restricted?</strong>  This tells you immediately whether a travel eSIM is even technically possible.</li>
+<li><strong>Does the company have a corporate roaming package?</strong>  Many carriers sell business roaming day passes or pooled international data.  If one exists, using it is nearly always the expected route.</li>
+<li><strong>If not, is a personal travel eSIM permitted on this device, and will it be reimbursed?</strong>  Get the answer in writing.  A one-line approval protects you if a security tool later flags the new network.</li>
+<li><strong>Must the VPN stay on, and are there countries where I should not connect at all?</strong>  Some organisations prohibit corporate devices from connecting in specific jurisdictions entirely.</li>
+<li><strong>How do I expense it?</strong>  Travel eSIM receipts are emailed instantly and itemise data, dates and destination, which finance teams generally accept without fuss.  Our <a href="/best-budget-esim/">budget eSIM guide</a> covers providers whose pricing makes those claims easy to justify, and <a href="/how-much-esim-data/">how much data you actually need</a> helps you buy a defensible amount rather than guessing.</li>
+</ol>
+<p>Corporate roaming versus a personal travel eSIM is rarely a close call on price: carrier roaming passes commonly cost several pounds or dollars per day, while our research found travel eSIM data starting around $4 for 1GB from <a href="/go/airalo" target="_blank" rel="sponsored noopener">Airalo</a> or $6.90 per day for unlimited data from <a href="/go/holafly" target="_blank" rel="sponsored noopener">Holafly</a> (provider websites, accessed 19 July 2026).  But price is not the deciding factor on a work phone; policy is.  The wider cost comparison lives in our <a href="/esim-vs-roaming/">eSIM vs roaming</a> guide.</p>
+<h2>Workarounds and their risks: an honest note</h2>
+<p>We are not going to pretend workarounds do not exist, and we are not going to advise using them against policy.</p>
+<p><strong>The legitimate workaround is a second device.</strong>  Put the travel eSIM on your personal phone and hotspot your work phone to it if needed.  The work device's VPN and management stack operate exactly as they do on hotel Wi-Fi, which corporate devices use constantly.  Check policy even here - a minority of organisations restrict which networks corporate devices may join - but for most employees this is the clean answer.</p>
+<p><strong>The bad ideas are unenrolling, jailbreaking or wiping a corporate device</strong> to escape restrictions.  MDM platforms alert administrators when devices fall out of management, conditional access will typically cut the device off from email and internal systems within hours, and you will have converted a connectivity question into a conduct question.  Similarly, do not sign work accounts into an unmanaged personal device to dodge the issue; that moves corporate data outside the protection the restrictions exist to provide.</p>
+<p>If a restriction genuinely blocks you from working abroad, the fix is a ticket, not a workaround.  Admins can lift the eSIM restriction for your device group in minutes when there is a business case.</p>
+<h2>Dual SIM: keeping work and personal lines apart</h2>
+<p>Where eSIM installation is allowed, modern phones make separation straightforward.  Your work line stays active for calls and messages while the travel eSIM carries data, so colleagues can still reach your normal number without your employer paying roaming rates for your holiday browsing.  Label each line clearly, set the travel eSIM as the data line, and disable data on the work line to avoid accidental roaming charges.  Our guide to <a href="/two-esims-at-once/">running two eSIMs at once</a> walks through the settings on both platforms, and if you keep a permanent second line for work the logic in our <a href="/esim-permanent-second-line/">permanent second line guide</a> applies year-round.</p>
+<p>One caution: if your work line is itself an eSIM and your phone has limited active-line slots, do not delete or deactivate the corporate profile to make room.  If the restriction described above is enabled you will not be able to reinstall it yourself, and even where you can, reissuing a corporate eSIM usually means a help desk ticket.</p>
+<h2>What the eSIM provider sees on a work device</h2>
+<p>A travel eSIM provider is, for the duration of your trip, your network operator.  It can see the volume and timing of your traffic and the destinations of unencrypted connections, exactly as any carrier can.  On a corporate device with an always-on VPN the picture changes in your favour: the provider sees a single encrypted tunnel to your company's VPN gateway and essentially nothing else.  Your employer's security stack, meanwhile, sees what it always sees, VPN or not, because device management operates above the network layer.  The full breakdown is in <a href="/what-esim-provider-sees/">what your eSIM provider can see</a>, and travellers concerned about surveillance jurisdictions should read our guide to <a href="/esim-government-tracking/">eSIM and government tracking</a>.</p>
+<p>For VPN-always-on fleets there is a practical purchasing consequence: tunnel overhead and constant background sync consume more data than casual personal use, so small top-up plans run out faster than expected.  Unlimited plans, or generous fixed allowances, suit managed devices better.  Our guide to the <a href="/best-esim-vpn-users/">best eSIMs for VPN users</a> covers which providers handle permanent VPN use gracefully.</p>
+<h2>Traveller's checklist: managed device edition</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>When</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ask IT whether your device is supervised/fully managed and whether eSIM changes are restricted</td>
+<td>1-2 weeks before travel</td>
+<td>Determines whether a travel eSIM is technically possible</td>
+</tr>
+<tr>
+<td>Ask about corporate roaming packages and the approved connectivity route</td>
+<td>1-2 weeks before</td>
+<td>Using the negotiated deal is usually the expected behaviour</td>
+</tr>
+<tr>
+<td>Get written approval (email is fine) for a personal travel eSIM if permitted</td>
+<td>Before purchase</td>
+<td>Protects you if security tooling flags the new network</td>
+</tr>
+<tr>
+<td>Confirm VPN rules and any prohibited countries</td>
+<td>Before travel</td>
+<td>Some fleets must keep the VPN on; some ban connections in certain jurisdictions</td>
+</tr>
+<tr>
+<td>Buy and install the eSIM while still on home Wi-Fi</td>
+<td>Days before departure</td>
+<td>Installation needs a connection; do not leave it for arrival</td>
+</tr>
+<tr>
+<td>Label lines; set travel eSIM as data, work line for calls; disable data roaming on the work line</td>
+<td>After installation</td>
+<td>Prevents accidental roaming charges on the corporate bill</td>
+</tr>
+<tr>
+<td>Never delete or deactivate the corporate eSIM/profile</td>
+<td>Always</td>
+<td>Reinstallation may be blocked or require a help desk ticket</td>
+</tr>
+<tr>
+<td>Keep the itemised eSIM receipt for expenses</td>
+<td>After purchase</td>
+<td>Instant email receipts make claims straightforward</td>
+</tr>
+<tr>
+<td>If blocked, raise a ticket rather than working around it</td>
+<td>Any time</td>
+<td>Admins can adjust restrictions quickly with a business case</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Advantages and disadvantages of a travel eSIM on a work device</h2>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Dramatically cheaper than most corporate roaming rates, and easy to expense with itemised receipts.</li>
+<li>Keeps the work number active for calls while data rides the cheaper line.</li>
+<li>No physical SIM swap, so the corporate SIM is never removed or lost.</li>
+<li>Works with, not against, an always-on VPN.</li>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>May be technically blocked on supervised or fully managed devices.</li>
+<li>May breach policy even where installation succeeds, so approval is essential.</li>
+<li>Breakout routing can confuse conditional access and location-based security rules.</li>
+<li>VPN overhead consumes allowances faster; small plans may fall short.</li>
+<li>Adds a configuration layer the help desk cannot see if problems arise abroad.</li>
+</ul>
+<h2>Who should choose what</h2>
+<ul>
+<li><strong>Employees on supervised corporate phones in regulated industries:</strong> use the corporate roaming package, full stop.  If none exists, raise it with IT well before travel.</li>
+<li><strong>Employees on corporate phones without eSIM restrictions:</strong> ask first, get approval in writing, then a cheap travel eSIM with the work line kept active is a sound setup.</li>
+<li><strong>BYOD employees:</strong> you are free to install what you like on the personal side.  A travel eSIM plus your work profile or work container is the natural combination.</li>
+<li><strong>Anyone refused permission:</strong> put the travel eSIM on a personal device and hotspot when necessary.  Do not fight the management stack.</li>
+<li><strong>IT decision-makers reading along:</strong> if your fleet runs an always-on VPN, an approved travel eSIM list is cheaper than roaming and safer than shadow connectivity your users will otherwise invent.</li>
+</ul>
+<h2>The verdict</h2>
+<p>The technology is unambiguous: Apple, Google and every major MDM platform give employers real, enforceable control over eSIMs on company-owned hardware, and none of it reaches the personal side of BYOD devices.  The etiquette is equally simple.  On a work phone, connectivity is a shared decision, and a two-line email to IT before you fly converts a policy risk into a reimbursable expense.  Travel eSIMs and corporate device management coexist perfectly well; the employees who get caught out are the ones who never asked.</p>
+<h2>Frequently asked questions</h2>
+<h3>Can my employer stop me installing a travel eSIM on my work phone?</h3>
+<p>Yes, if the device is a supervised iPhone or a fully managed Android device.  Apple's supervised-only restriction prevents adding or removing eSIM plans, and Android Enterprise policies can block mobile network configuration.  On BYOD devices these controls do not apply to the personal side.</p>
+<h3>Can my company see what I do on a travel eSIM I install on a managed phone?</h3>
+<p>Management operates at the device level, so anything visible to your employer's tooling before the eSIM (managed apps, device-wide VPN traffic, compliance state) remains visible after it.  The eSIM changes which network carries the traffic, not what the management stack can observe.</p>
+<h3>Should I use the company roaming package or buy my own travel eSIM?</h3>
+<p>If a corporate roaming package exists, use it; that is almost always the expected route and keeps costs on the corporate bill.  If none exists, ask whether a personal travel eSIM is permitted and reimbursable.  Travel eSIM data typically costs a fraction of ad-hoc roaming rates.</p>
+<h3>Will adding a travel eSIM interfere with my work SIM or corporate profile?</h3>
+<p>No.  Modern phones run two active lines side by side, and adding an eSIM never deletes another.  The risk runs the other way: do not remove the corporate line to free a slot, because on restricted devices you may be unable to reinstall it yourself.</p>
+<h3>What happens to my eSIMs if IT remotely wipes the phone?</h3>
+<p>On Android, administrators can include eSIMs in a wipe.  On iOS, erasure removes eSIMs unless the organisation has configured preservation (available from iOS 17.2 for passcode-failure wipes).  Assume a full wipe takes personal travel eSIMs with it, and keep your provider account details so you can request a replacement profile.</p>
+<div class="sources-box"><h2>Sources and fact-checking notes</h2>
+<ul>
+<li>iOS supervised restrictions ("Modify eSIM settings" iOS 12.1, "Modify cellular plan settings" iOS 11, eSIM preservation on erase iOS 17.2, eSIM outgoing transfer block iOS 18) - Apple Platform Deployment, https://support.apple.com/guide/deployment/dep0f7dd3d8/web - accessed 19 July 2026</li>
+<li>Intune "Block modification of eSIM settings" (iOS 12.1+, automated device enrolment) - https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-restrictions-ios - accessed 19 July 2026</li>
+<li>Intune bulk eSIM activation code deployment for Windows devices - https://learn.microsoft.com/en-us/intune/intune-service/configuration/esim-device-configuration - accessed 19 July 2026</li>
+<li>Android Management API policy fields (mobileNetworksConfigDisabled, userInitiatedAddEsimSettings, WIPE_ESIMS wipe flag) - https://developers.google.com/android/management/reference/rest/v1/enterprises.policies - accessed 19 July 2026</li>
+<li><a href="/go/airalo" target="_blank" rel="sponsored noopener">Airalo</a> from $4.00/1GB; <a href="/go/holafly" target="_blank" rel="sponsored noopener">Holafly</a> $6.90/day unlimited - airalo.com and holafly.com - accessed 18-19 July 2026</li>
+</ul><p class="credits-note"><strong>Photo credits:</strong> airbus777 (CC BY 2.0), Pixel.la Free Stock Photos (CC0 1.0), all via Wikimedia Commons.</p></div>
+  </div>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pb-4"><p class="font-black uppercase text-sm tracking-widest mb-3 border-t-4 border-black pt-5">Related guides</p><a href="/esim-government-tracking/" class="inline-block bg-white border-2 border-black px-3 py-1.5 font-bold text-sm shadow-[3px_3px_0px_0px_#000] hover:bg-neo-secondary transition-colors duration-100 mr-2 mb-2">Can Governments Track a Travel eSIM?</a><a href="/what-esim-provider-sees/" class="inline-block bg-white border-2 border-black px-3 py-1.5 font-bold text-sm shadow-[3px_3px_0px_0px_#000] hover:bg-neo-secondary transition-colors duration-100 mr-2 mb-2">What Your eSIM Provider Can See</a><a href="/esim-traffic-routing/" class="inline-block bg-white border-2 border-black px-3 py-1.5 font-bold text-sm shadow-[3px_3px_0px_0px_#000] hover:bg-neo-secondary transition-colors duration-100 mr-2 mb-2">Does Your Traffic Exit Abroad?</a></div>
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+    <a href="/#guides" class="inline-flex items-center gap-2 font-black uppercase text-sm tracking-widest border-4 border-black bg-neo-secondary px-5 py-3 shadow-[5px_5px_0px_0px_#000] hover:bg-neo-accent active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-100">&#8592; Back to all guides</a>
+  </div>
+
+</article>
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-black text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div>
+      <span class="bg-neo-bg border-4 border-white px-3 py-2 -rotate-1 shadow-[4px_4px_0px_0px_#fff] inline-block">
+        <svg class="h-16 w-auto" viewBox="0 0 960 700" role="img" aria-label="eSIM Verdict"><text x="40" y="330" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="330" fill="#000" textLength="680" lengthAdjust="spacingAndGlyphs">ESIM</text><path d="M756 70 H866 L928 132 V330 H756 Z" fill="none" stroke="#000" stroke-width="18"/><path d="M792 232 L844 290 L936 158" fill="none" stroke="#FF6B6B" stroke-width="38" stroke-linecap="square"/><path d="M40 380 H920 V478 H882 V562 H920 V640 H40 Z" fill="#000"/><text x="78" y="596" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="185" fill="#FF6B6B" textLength="768" lengthAdjust="spacingAndGlyphs">VERDICT</text></svg>
+      </span>
+      <p class="mt-6 font-bold text-sm leading-relaxed max-w-xs">Every eSIM tested. One clear verdict. Independently tested, bluntly ranked, updated monthly.</p>
+    </div>
+    <nav aria-label="Footer" class="font-bold uppercase text-sm tracking-widest">
+      <p class="font-black text-neo-secondary mb-4">Site</p>
+      <ul class="space-y-3">
+        <li><a href="/#rankings" class="hover:bg-neo-accent hover:text-black px-1 transition-colors duration-100">The verdict</a></li>
+        <li><a href="/#compare" class="hover:bg-neo-accent hover:text-black px-1 transition-colors duration-100">Compare all 5</a></li>
+        <li><a href="/#howto" class="hover:bg-neo-accent hover:text-black px-1 transition-colors duration-100">Install guide</a></li>
+        <li><a href="/#guides" class="hover:bg-neo-accent hover:text-black px-1 transition-colors duration-100">eSIM guides</a></li>
+        <li><a href="/#faq" class="hover:bg-neo-accent hover:text-black px-1 transition-colors duration-100">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="font-bold text-sm leading-relaxed">
+      <p class="font-black text-neo-secondary uppercase tracking-widest mb-4">The fine print</p>
+      <p>Some links are affiliate links. We may earn a commission at no cost to you. Rankings are based on independent testing and never sold.</p>
+      <p class="mt-4 text-white/80">&copy; 2026 eSIM Verdict. All rights reserved.</p>
+    </div>
+  </div>
+  <div class="border-t-4 border-white overflow-hidden" aria-hidden="true">
+    <div class="flex w-max animate-marquee whitespace-nowrap py-3">
+      <div class="flex items-center gap-6 pr-6 font-black uppercase tracking-widest text-neo-secondary text-sm">
+        <span>No roaming</span><span class="text-white">&#9733;</span><span>No contracts</span><span class="text-white">&#9733;</span><span>No nonsense</span><span class="text-white">&#9733;</span><span>Just data</span><span class="text-white">&#9733;</span>
+      </div>
+      <div class="flex items-center gap-6 pr-6 font-black uppercase tracking-widest text-neo-secondary text-sm">
+        <span>No roaming</span><span class="text-white">&#9733;</span><span>No contracts</span><span class="text-white">&#9733;</span><span>No nonsense</span><span class="text-white">&#9733;</span><span>Just data</span><span class="text-white">&#9733;</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

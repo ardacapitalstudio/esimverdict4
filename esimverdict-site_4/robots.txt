@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://esimverdict.com/sitemap.xml
